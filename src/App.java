@@ -1,26 +1,16 @@
-import domain.Gato;
+import domain.Cachorro;
+import domain.Leao;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        var gato = new Gato("Clovis", 5, "malhado");
-        var gato1 = new Gato("Ozzy", 7, "cinza");
+        var leao = new Leao("Alex", 5, "Savana");
+        var cachorro = new Cachorro("Alvin", 2, "Doméstico");
 
-        var gato3 = new Gato("Felix");
+        System.out.println(leao);
+        leao.emitirSom();
+        System.out.println(cachorro);
+        cachorro.emitirSom();
 
-        System.out.println(gato);
-        
-        // gato.comer();
-        // gato.dormir();
-        // gato.meow();
-
-        System.out.println(gato1);
-        // gato1.comer();
-        // gato1.dormir();
-        // gato1.meow();
-
-        System.out.println(gato3);
-
-        var gato4 = new Gato();
-        System.out.println(gato4);
+        leao.patrulharTerritorio();
     }
 }
